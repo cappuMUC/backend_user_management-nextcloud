@@ -4,7 +4,7 @@
     <id>backend_user_management</id>
     <name>Backend User Management</name>
     <summary>Allows user management through Nextcloud</summary>
-    <description><![CDATA[This plugin hooks into Nextcloud&#39;s user management and runs shell scripts in the following situations:
+    <description><![CDATA[This plugin hooks into Nextcloud&#39;s user management and runs management tasks in the following situations:
 
 - a new user was created
 - a user was deleted
@@ -15,7 +15,7 @@
     <namespace>BackendUserManagement</namespace>
     <category>customization</category>
     <category>integration</category>
-    <bugs>https://github.com/cappumuc/backend_user_management/issues</bugs>
+    <bugs>https://github.com/cappumuc/backend_user_management-nextcloud/issues</bugs>
     <dependencies>
         <nextcloud min-version="14" max-version="14"/>
     </dependencies>
