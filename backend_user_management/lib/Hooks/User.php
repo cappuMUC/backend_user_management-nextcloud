@@ -19,7 +19,7 @@ class User {
      */
     );
 
-  public static function onUserPasswordChange( $params ) {
+  public static function onUserPasswordChanged( $params ) {
     /* insert your code here
      * use the parameters as follows:
      * $params['uid']

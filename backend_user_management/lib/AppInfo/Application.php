@@ -17,13 +17,26 @@ class Application extends App {
 
 
   public function registerHooks() {
-    echo "[Hooks] Register!";
 
     Util::connectHook(
       'OC_User',
       'post_createUser',
       'OCA\BackendUserManagement\Hooks\User',
-      'createUser'
+      'onCreateUser'
+    );
+
+    Util::connectHook(
+      'OC_User',
+      'post_deleteUser',
+      'OCA\BackendUserManagement\Hooks\User',
+      'onDeleteUser'
+    );
+    
+    Util::connectHook(
+      'OC_User',
+      'post_setPassword',
+      'OCA\BackendUserManagement\Hooks\User',
+      'onUserPasswordChanged'
     );
   }
 
