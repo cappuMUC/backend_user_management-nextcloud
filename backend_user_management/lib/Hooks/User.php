@@ -9,7 +9,7 @@ class User {
      * $params['uid']
      * $params['password']
      */
-    );
+    }
 
   public static function onDeleteUser( $params ) {
     /* insert your code here
@@ -17,7 +17,7 @@ class User {
      * $params['uid']
      * $params['password']
      */
-    );
+    }
 
   public static function onUserPasswordChanged( $params ) {
     /* insert your code here
@@ -25,6 +25,6 @@ class User {
      * $params['uid']
      * $params['password']
      */
-    );
+    }
   }
 }
